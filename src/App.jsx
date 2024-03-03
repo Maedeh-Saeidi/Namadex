@@ -4,6 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
 import Services from "./pages/Services";
 import Companies from "./pages/Companies";
+import Slogan from "./components/Slogan";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HomePage></HomePage>
       <AboutUs></AboutUs>
       <Services></Services>
+      <Slogan></Slogan>
       <Companies></Companies>
     </div>
   );
