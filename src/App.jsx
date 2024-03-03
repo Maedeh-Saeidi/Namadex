@@ -7,6 +7,7 @@ import Companies from "./pages/Companies";
 import Slogan from "./components/Slogan";
 import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
+import NewsPage from "./pages/NewsPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Companies></Companies>
       <Projects></Projects>
       <ContactUs></ContactUs>
+      <NewsPage></NewsPage>
     </div>
   );
 }
