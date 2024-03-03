@@ -10,8 +10,8 @@ export default function Companies() {
       <a href="">
         <img src="../src/images/C3.jpg" alt="" width={100} />
       </a>
-      <a href="">
-        <img src="../src/images/C4.jpg" alt="" width={100} />
+      <a href="https://acometr.com/app/projects">
+        <img src="../src/images/C4.jpg" alt="Acometr" width={100} />
       </a>
     </div>
   );

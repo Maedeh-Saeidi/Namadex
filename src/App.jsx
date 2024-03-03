@@ -5,6 +5,8 @@ import HomePage from "./pages/HomePage";
 import Services from "./pages/Services";
 import Companies from "./pages/Companies";
 import Slogan from "./components/Slogan";
+import Projects from "./pages/Projects";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Services></Services>
       <Slogan></Slogan>
       <Companies></Companies>
+      <Projects></Projects>
+      <ContactUs></ContactUs>
     </div>
   );
 }

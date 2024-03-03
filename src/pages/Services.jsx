@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <div className="h-screen bg-[url(../src/images/ServicesBI.jpg)] bg-no-repeat bg-cover bg-contain flex flex-col gap-7 justify-center items-center">
+    <div className=" bg-[url(../src/images/ServicesBI.jpg)] bg-no-repeat bg-cover bg-contain flex flex-col gap-7 justify-center items-center">
       <div className="flex flex-col gap-1 items-center mb-5 ">
         <h1 className="font-bold text-[35px] text-[#4D4D4D]">
           انواع{" "}
