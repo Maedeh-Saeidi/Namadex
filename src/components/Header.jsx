@@ -2,7 +2,7 @@ import SocialMedia from "./SocialMedia";
 export default function Header() {
   return (
     <div className="w-full h-[90px] flex flex-row ">
-      <SocialMedia></SocialMedia>
+      <SocialMedia color={"#6c6c6c"}></SocialMedia>
 
       <div className="flex-1 flex items-center justify-center">
         <ul className=" flex flex-row gap-7 text-[16px]">
