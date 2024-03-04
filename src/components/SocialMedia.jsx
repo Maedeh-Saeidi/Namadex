@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faInstagram,
   faWhatsapp,
   faTelegram,
-  faInstagram,
-  faFacebookF,
   faYoutube,
+  faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 export default function SocialMedia() {
   return (
     <div className=" flex flex-row flex-1 gap-3 flex items-center justify-center ">
@@ -61,7 +62,7 @@ export default function SocialMedia() {
           />
         </a>
       </div>
-      {/* <div className="fa-xl">
+      <div className="fa-xl">
         <a
           href="link"
           className="border-neutral-100 border-2 rounded-full p-2 "
@@ -71,7 +72,7 @@ export default function SocialMedia() {
             style={{ color: "#6c6c6c", fontSize: "28px" }}
           />
         </a>
-      </div> */}
+      </div>
     </div>
   );
 }
