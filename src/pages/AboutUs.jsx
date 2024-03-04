@@ -7,7 +7,7 @@ export default function AboutUs() {
             آشنایی با مفهوم توکنایز
           </h1>
           <p className="text-[24px] text-[#4D4D4D] max-w-[90%] text-right">
-            توکنایزیشن یا نمادسازی فرآیند جایگزینی داده های حساس با نمادهای
+            توکنیزیشن یا نمادسازی فرآیند جایگزینی داده های حساس با نمادهای
             شناسایی منحصر به فرد است که تمام اطلاعات ضروری در مورد داده ها را
             بدون به خطر انداختن امنیت آن حفظ می کند. توکن‌سازی که به دنبال به
             حداقل رساندن میزان داده‌های حساسی است که یک کسب ‌وکار
@@ -19,8 +19,8 @@ export default function AboutUs() {
       </div>
       <div className="flex-1 relative flex flex-col justify-center">
         <img
-          className="absolute right-0"
-          src="../src/images/AboutUsImg.jpg"
+          className="absolute right-20 "
+          src="../src/images/tokenize.jpeg"
           alt="AboutUs Image"
           width={500}
         />

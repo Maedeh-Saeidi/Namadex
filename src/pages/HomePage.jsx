@@ -3,7 +3,7 @@ export default function HomePage() {
     <div className="bg-[#fffaf4] h-screen w-full bg-[url(../src/images/HomePageBI.jpg)] bg-contain bg-no-repeat bg-cover bg-left flex flex-col items-end justify-center align-center">
       <div className="flex items-end flex-col gap-[8rem] mr-[8rem]">
         <div className="flex flex-col items-end">
-          <h1 className="text-[64px] font-bold text-[#3DA88C]">نمادکس</h1>
+          <h1 className="text-[64px] font-bold text-[#3DA88C]">نمادِکس</h1>
           <h2 className="text-[40px] text-[#4D4D4D]">
             با ما به دنیای جدید کسب و کار بپیوندید
           </h2>

@@ -8,6 +8,7 @@ import Slogan from "./components/Slogan";
 import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import NewsPage from "./pages/NewsPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Projects></Projects>
       <ContactUs></ContactUs>
       <NewsPage></NewsPage>
+      <Footer></Footer>
     </div>
   );
 }

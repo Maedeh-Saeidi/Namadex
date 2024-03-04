@@ -4,7 +4,7 @@ export default function Projects() {
       <h1 className="font-bold text-[50px] text-[#4D4D4D]">پروژه های ما</h1>
       <div className="flex flex-row gap-1 text-[#4D4D4D] text-[20px]">
         <a href="">
-          <div class=" m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[22rem] w-[18rem] rounded-xl">
+          <div className=" m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[22rem] w-[18rem] rounded-xl">
             <img
               src="../src/images/Teehoo.jpg"
               alt=""
@@ -23,7 +23,7 @@ export default function Projects() {
           </div>
         </a>
         <a href="">
-          <div class="mt-10 m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[22rem] w-[18rem] rounded-xl">
+          <div className="mt-10 m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[22rem] w-[18rem] rounded-xl">
             <img
               src="../src/images/Jalizan.jpg"
               alt=""
@@ -43,7 +43,7 @@ export default function Projects() {
           </div>
         </a>
         <a href="">
-          <div class=" m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[22rem] w-[18rem] rounded-xl">
+          <div className=" m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[22rem] w-[18rem] rounded-xl">
             <img
               src="../src/images/ecosam.jpg"
               alt=""
