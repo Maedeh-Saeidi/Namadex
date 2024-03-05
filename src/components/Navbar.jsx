@@ -12,10 +12,10 @@ export default function Navbar() {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto">
       <ul className="hidden md:flex">
-        <li className="p-4">درباره ی ما</li>
-        <li className="p-4">محصولات</li>
-        <li className="p-4">سرویس ها</li>
-        <li className="p-4">ارتباط با ما</li>
+        <a className="p-4">درباره ی ما</a>
+        <a className="p-4">محصولات</a>
+        <a className="p-4">سرویس ها</a>
+        <a className="p-4">ارتباط با ما</a>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -28,10 +28,10 @@ export default function Navbar() {
         }
       >
         <ul className="p-1 pt-10">
-          <li className="p-4 border-b-2   border-[#3FAC8D]">درباره ی ما</li>
-          <li className="p-4 border-b-2 border-[#3FAC8D]">محصولات</li>
-          <li className="p-4 border-b-2 border-[#3FAC8D]">سرویس ها</li>
-          <li className="p-4 border-b-2 border-[#3FAC8D]">ارتباط با ما</li>
+          <a className="p-4 border-b-2 border-[#3FAC8D]">درباره ی ما</a>
+          <a className="p-4 border-b-2 border-[#3FAC8D]">محصولات</a>
+          <a className="p-4 border-b-2 border-[#3FAC8D]">سرویس ها</a>
+          <a className="p-4 border-b-2 border-[#3FAC8D]">ارتباط با ما</a>
         </ul>
       </div>
     </div>
