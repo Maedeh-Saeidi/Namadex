@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import NewsPage from "./pages/NewsPage";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
