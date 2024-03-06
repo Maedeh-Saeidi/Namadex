@@ -10,7 +10,7 @@ import { faAt } from "@fortawesome/free-solid-svg-icons";
 
 export default function SocialMedia({ color }) {
   return (
-    <div className="flex flex-row flex-1 gap-3 items-center justify-center">
+    <div className="flex flex-row flex-1 gap-2.5 items-center justify-center">
       <div className="fa-xl">
         <a
           href="https://wa.me/989126846896"
@@ -18,7 +18,8 @@ export default function SocialMedia({ color }) {
         >
           <FontAwesomeIcon
             icon={faWhatsapp}
-            style={{ color: color, fontSize: "30px" }}
+            style={{ color: color, fontSize: "25px" }}
+            className="pr-1 pl-1"
           />
         </a>
       </div>
@@ -29,7 +30,8 @@ export default function SocialMedia({ color }) {
         >
           <FontAwesomeIcon
             icon={faTelegram}
-            style={{ color: color, fontSize: "27px" }}
+            style={{ color: color, fontSize: "24px" }}
+            className="pl-1 pr-1"
           />
         </a>
       </div>
@@ -37,7 +39,8 @@ export default function SocialMedia({ color }) {
         <a href="link" className="border-neutral-100 border-2 rounded-full p-2">
           <FontAwesomeIcon
             icon={faInstagram}
-            style={{ color: color, fontSize: "28px" }}
+            style={{ color: color, fontSize: "24px" }}
+            className="pl-1 pr-1"
           />
         </a>
       </div>
@@ -48,7 +51,8 @@ export default function SocialMedia({ color }) {
         >
           <FontAwesomeIcon
             icon={faFacebookF}
-            style={{ color: color, fontSize: "27px" }}
+            style={{ color: color, fontSize: "24px" }}
+            className="pr-1.5 pl-1"
           />
         </a>
       </div>
@@ -59,18 +63,18 @@ export default function SocialMedia({ color }) {
         >
           <FontAwesomeIcon
             icon={faYoutube}
-            style={{ color: color, fontSize: "28px" }}
+            style={{ color: color, fontSize: "24px" }}
           />
         </a>
       </div>
       <div className="fa-xl">
         <a
-          href="Namadex.ir@gmail.com"
+          href="mailto:Namadex.ir@gmail.com"
           className="border-neutral-100 border-2 rounded-full p-2"
         >
           <FontAwesomeIcon
             icon={faAt}
-            style={{ color: color, fontSize: "28px" }}
+            style={{ color: color, fontSize: "26px" }}
           />
         </a>
       </div>
