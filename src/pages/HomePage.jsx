@@ -3,9 +3,9 @@ import theMan from "../images/Man.png";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="sm:bg-[url(../src/images/HomePageBI.jpg)] bg-no-repeat bg-cover bg-left h-screen">
       <Header></Header>
-      <div className="flex flex-col h-screen w-full md:flex-row justify-center items-center sm:bg-[url(../src/images/HomePageBI.jpg)] bg-no-repeat bg-cover bg-left bg-[#fffaf4] xl:h-[60rem]">
+      <div className="flex flex-col h-screen w-full md:flex-row justify-center items-center bg-[#fffaf4] xl:h-[60rem] sm:bg-transparent">
         <div className="flex-1 sm:hidden">
           <img src={theMan} alt="The Man" />
         </div>
@@ -22,7 +22,7 @@ export default function HomePage() {
             </h3>
             <h3 className="text-[24px] text-[#6A7875]"> در شرکت ما</h3>
           </div>
-          <button className="bg-[#3DA88C] text-white py-2.5 px-5 rounded absolute right-10 bottom-5 sm:bottom-10 sm:right-[4rem]">
+          <button className="bg-[#3DA88C] text-white py-2.5 px-5 rounded absolute right-10 bottom-5 sm:bottom-[7rem] sm:right-[4rem]">
             !ثبت نام کنید
           </button>
         </div>
