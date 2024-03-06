@@ -1,20 +1,18 @@
 import "./App.css";
+import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import AboutUs from "./pages/AboutUs";
-import HomePage from "./pages/HomePage";
 import Services from "./pages/Services";
-import Companies from "./pages/Companies";
 import Slogan from "./components/Slogan";
+import Companies from "./pages/Companies";
 import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import NewsPage from "./pages/NewsPage";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <Header></Header>
       <HomePage></HomePage>
       <AboutUs></AboutUs>
       <Services></Services>

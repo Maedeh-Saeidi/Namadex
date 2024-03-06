@@ -23,11 +23,11 @@ export default function Navbar() {
       <div
         className={
           !nav
-            ? "fixed right-0 top-[4rem] w-[25%] h-full border-r-gray-900 bg-[#FFFEFD] ease-in-out duration-500  "
+            ? "fixed right-0 top-[4rem] w-[50%] h-full border-r-gray-900 bg-[#FFFEFD] z-10 ease-in-out duration-500  "
             : "fixed left-[-100%]"
         }
       >
-        <ul className="p-1 pt-10">
+        <ul className="p-1 pt-[10rem] flex flex-col gap-2">
           <a className="p-4 border-b-2 border-[#3FAC8D]">درباره ی ما</a>
           <a className="p-4 border-b-2 border-[#3FAC8D]">محصولات</a>
           <a className="p-4 border-b-2 border-[#3FAC8D]">سرویس ها</a>
