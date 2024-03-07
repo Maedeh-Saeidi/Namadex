@@ -1,4 +1,5 @@
 import tokenize from "../images/tokenize.jpeg";
+import { motion } from "framer-motion";
 export default function AboutUs() {
   return (
     <div
@@ -17,9 +18,17 @@ export default function AboutUs() {
             حداقل رساندن میزان داده‌های حساسی است که یک کسب ‌وکار
           </p>
         </div>
-        <a href="" className="text-[15px] text-[#3FAC8D] sm:text-[20px] ml-10">
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+            textShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
+          href="#ReadMore"
+          target="_blank"
+          className="text-[15px] text-[#3FAC8D] sm:text-[20px] ml-10"
+        >
           ادامه ی مطلب
-        </a>
+        </motion.a>
       </div>
       <div className="flex-1 relative flex flex-col justify-center">
         <img

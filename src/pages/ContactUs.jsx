@@ -1,4 +1,5 @@
 import EmailP from "../images/EmailP.png";
+import { motion } from "framer-motion";
 export default function ContactUs() {
   return (
     <div
@@ -32,9 +33,15 @@ export default function ContactUs() {
               className=" w-[18rem] rounded py-2 px-5 text-right sm:w-[25rem]"
               placeholder="متن پیام خود را بنویسید"
             />
-            <button className="w-[18rem] bg-[#FFFFFF] text-[#3EA98D]] py-2 px-5 rounded text-[#3EA98D] sm:w-[25rem] text-center">
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+              className="w-[18rem] bg-[#FFFFFF] text-[#3EA98D]] py-2 px-5 rounded text-[#3EA98D] sm:w-[25rem] text-center"
+            >
               ارسال
-            </button>
+            </motion.button>
           </form>
         </div>
       </div>

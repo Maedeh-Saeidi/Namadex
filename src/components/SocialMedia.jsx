@@ -6,12 +6,19 @@ import {
   faYoutube,
   faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 
 export default function SocialMedia({ color }) {
   return (
     <div className="flex flex-row flex-1 gap-2.5 items-center justify-center">
-      <div className="fa-xl">
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+        }}
+        className="fa-xl"
+      >
         <a
           href="https://wa.me/989126846896"
           className="border-neutral-100 border-2 rounded-full p-2"
@@ -22,8 +29,14 @@ export default function SocialMedia({ color }) {
             className="pr-1 pl-1"
           />
         </a>
-      </div>
-      <div className="fa-xl">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+        }}
+        className="fa-xl"
+      >
         <a
           href="https://web.telegram.org/k/#@Namadexx"
           className="border-neutral-100 border-2 rounded-full p-2"
@@ -34,8 +47,14 @@ export default function SocialMedia({ color }) {
             className="pl-1 pr-1"
           />
         </a>
-      </div>
-      <div className="fa-xl">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+        }}
+        className="fa-xl"
+      >
         <a
           href="https://www.instagram.com/namadex.ir?utm_source=qr&igsh=dXFxMXZpaWUxb3Rw"
           className="border-neutral-100 border-2 rounded-full p-2"
@@ -46,8 +65,14 @@ export default function SocialMedia({ color }) {
             className="pl-1 pr-1"
           />
         </a>
-      </div>
-      <div className="fa-xl">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+        }}
+        className="fa-xl"
+      >
         <a
           href="https://www.facebook.com/profile.php?id=61556810630019&mibextid=ZbWKwL"
           className="border-neutral-100 border-2 rounded-full p-2"
@@ -58,8 +83,14 @@ export default function SocialMedia({ color }) {
             className="pr-1.5 pl-1"
           />
         </a>
-      </div>
-      <div className="fa-xl">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+        }}
+        className="fa-xl"
+      >
         <a
           href="https://youtube.com/@Namadex?si=s2dZ4CeCY97NjcJj"
           className="border-neutral-100 border-2 rounded-full p-2"
@@ -69,8 +100,14 @@ export default function SocialMedia({ color }) {
             style={{ color: color, fontSize: "24px" }}
           />
         </a>
-      </div>
-      <div className="fa-xl">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+        }}
+        className="fa-xl"
+      >
         <a
           href="mailto:Namadex.ir@gmail.com"
           className="border-neutral-100 border-2 rounded-full p-2"
@@ -80,7 +117,7 @@ export default function SocialMedia({ color }) {
             style={{ color: color, fontSize: "26px" }}
           />
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 }

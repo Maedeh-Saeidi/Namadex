@@ -15,7 +15,7 @@ export default function Projects() {
         پروژه های ما
       </h1>
       <div className=" mb-10 flex flex-col gap-1 text-[#4D4D4D] text-[15px] sm:text-[20px] sm:flex-row">
-        <a href="https://teehoo.me/">
+        <a href="https://teehoo.me/" target="_blank">
           <div className=" m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[20rem] w-[18rem] rounded-xl sm:h-[22rem]">
             <img src={Teehoo} alt="" className="h-[190px] w-full rounded-xl" />
             <img
@@ -30,7 +30,7 @@ export default function Projects() {
             </p>
           </div>
         </a>
-        <a href="https://jalizan.com/" className="sm:pt-10 ">
+        <a href="https://jalizan.com/" className="sm:pt-10" target="_blank">
           <div className="border-2 border-[#3DA88C] m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[20rem] w-[18rem] rounded-xl sm:h-[22rem]">
             <img src={Jalizan} alt="" className="h-[190px] w-full rounded-xl" />
             <img
@@ -46,7 +46,7 @@ export default function Projects() {
             </p>
           </div>
         </a>
-        <a href="https://acometr.com/app/projects">
+        <a href="https://acometr.com/app/projects" target="_blank">
           <div className=" m-2 bg-[#ffffff] flex flex-col flex-start items-center h-[20rem] w-[18rem] rounded-xl sm:h-[22rem]">
             <img src={ecosam} alt="" className="h-[190px] w-full rounded-xl" />
             <img

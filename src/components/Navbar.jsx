@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [nav, setNav] = useState(true);
@@ -15,18 +16,46 @@ export default function Navbar() {
       className="flex justify-between items-center h-24 max-w-[1240px] mx-auto sm:pr-[14rem]"
     >
       <ul className="hidden md:flex">
-        <a href="#AboutUs" className="p-4">
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
+          href="#AboutUs"
+          className="p-4"
+        >
           درباره ی ما
-        </a>
-        <a href="#Services" className="p-4">
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
+          href="#Services"
+          className="p-4"
+        >
           محصولات
-        </a>
-        <a href="#Projects" className="p-4">
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
+          href="#Projects"
+          className="p-4"
+        >
           سرویس ها
-        </a>
-        <a href="#ContactUs" className="p-4">
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
+          href="#ContactUs"
+          className="p-4"
+        >
           ارتباط با ما
-        </a>
+        </motion.a>
       </ul>
       <div dir="rtl" onClick={handleNav} className="block md:hidden">
         {!nav ? (
