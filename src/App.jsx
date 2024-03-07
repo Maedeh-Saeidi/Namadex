@@ -1,4 +1,5 @@
 import "./App.css";
+import "./fonts/IRANSans 400.ttf";
 import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import AboutUs from "./pages/AboutUs";
@@ -12,7 +13,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="font-IRANSans       ">
       <HomePage></HomePage>
       <AboutUs></AboutUs>
       <Services></Services>

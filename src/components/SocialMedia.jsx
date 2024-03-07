@@ -36,7 +36,10 @@ export default function SocialMedia({ color }) {
         </a>
       </div>
       <div className="fa-xl">
-        <a href="link" className="border-neutral-100 border-2 rounded-full p-2">
+        <a
+          href="https://www.instagram.com/namadex.ir?utm_source=qr&igsh=dXFxMXZpaWUxb3Rw"
+          className="border-neutral-100 border-2 rounded-full p-2"
+        >
           <FontAwesomeIcon
             icon={faInstagram}
             style={{ color: color, fontSize: "24px" }}

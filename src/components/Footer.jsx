@@ -29,7 +29,7 @@ export default function Footer() {
       </div>
       <div className="sm:hidden flex-1 flex justify-center items-center mb-5 ml-5">
         <div className="flex flex-col gap-1 mb-[1rem] text-[15px]">
-          <a href="" className="pl-[3rem]">
+          <a href="https://namadex.ir/" target="_blank" className="pl-[3rem]">
             <img src={namadSvg} alt="" width={50} />
           </a>
           <a href="tel:982188600820+" className="text-center mt-2">

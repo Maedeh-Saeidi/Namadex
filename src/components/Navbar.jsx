@@ -15,12 +15,18 @@ export default function Navbar() {
       className="flex justify-between items-center h-24 max-w-[1240px] mx-auto sm:pr-[14rem]"
     >
       <ul className="hidden md:flex">
-        <a href="" className="p-4">
+        <a href="#AboutUs" className="p-4">
           درباره ی ما
         </a>
-        <a className="p-4">محصولات</a>
-        <a className="p-4">سرویس ها</a>
-        <a className="p-4">ارتباط با ما</a>
+        <a href="#Services" className="p-4">
+          محصولات
+        </a>
+        <a href="#Projects" className="p-4">
+          سرویس ها
+        </a>
+        <a href="#ContactUs" className="p-4">
+          ارتباط با ما
+        </a>
       </ul>
       <div dir="rtl" onClick={handleNav} className="block md:hidden">
         {!nav ? (
@@ -37,10 +43,34 @@ export default function Navbar() {
         }
       >
         <ul className="p-1 pt-[5rem] flex flex-col gap-2">
-          <a className="p-4 border-b-2 border-[#3FAC8D]">درباره ی ما</a>
-          <a className="p-4 border-b-2 border-[#3FAC8D]">محصولات</a>
-          <a className="p-4 border-b-2 border-[#3FAC8D]">سرویس ها</a>
-          <a className="p-4 border-b-2 border-[#3FAC8D]">ارتباط با ما</a>
+          <a
+            href="#AboutUs"
+            onClick={handleNav}
+            className="p-4 border-b-2 border-[#3FAC8D]"
+          >
+            درباره ی ما
+          </a>
+          <a
+            onClick={handleNav}
+            href="#Services"
+            className="p-4 border-b-2 border-[#3FAC8D]"
+          >
+            محصولات
+          </a>
+          <a
+            onClick={handleNav}
+            href="#Projects"
+            className="p-4 border-b-2 border-[#3FAC8D]"
+          >
+            سرویس ها
+          </a>
+          <a
+            onClick={handleNav}
+            href="#ContactUs"
+            className="p-4 border-b-2 border-[#3FAC8D]"
+          >
+            ارتباط با ما
+          </a>
         </ul>
       </div>
     </div>

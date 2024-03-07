@@ -1,7 +1,10 @@
 import EmailP from "../images/EmailP.png";
 export default function ContactUs() {
   return (
-    <div className="h-screen bg-no-repeat bg-cover sm:flex flex-col justify-center xl:h-[30rem]">
+    <div
+      id="ContactUs"
+      className="h-screen bg-no-repeat bg-cover sm:flex flex-col justify-center xl:h-[30rem]"
+    >
       <div className="flex flex-col sm:flex-row h-screen sm:h-[30rem] bg-[url(../src/images/GreenBg.jpg)] ">
         <div className="flex-1 flex flex-col justify-center items-center relative">
           <img

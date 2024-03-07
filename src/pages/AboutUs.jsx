@@ -1,7 +1,10 @@
 import tokenize from "../images/tokenize.jpeg";
 export default function AboutUs() {
   return (
-    <div className="bg-[url(../src/images/AboutUsBI.jpg)] bg-cover bg-contain bg-no-repeat flex flex-col-reverse h-screen sm:flex-row bg-left xl:h-[50rem]">
+    <div
+      id="AboutUs"
+      className="bg-[url(../src/images/AboutUsBI.jpg)] bg-cover bg-contain bg-no-repeat flex flex-col-reverse h-screen sm:flex-row bg-left xl:h-[50rem]"
+    >
       <div className="flex-1 flex flex-col gap-10 justify-center items-start">
         <div className="flex flex-col gap-10 items-end">
           <h1 className="font-bold text-[30px] text-[#4D4D4D] mr-4  sm:text-[40px]">
