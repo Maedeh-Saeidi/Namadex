@@ -52,13 +52,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex-1 sm:mt-[10rem] text-[14px] sm:text-[20px] mt-5 sm:mt-0">
-        <ul className="flex flex-row gap-5 sm:flex-col items-center justify-center sm:mt-[7.5rem] sm:gap-5">
+        <ul className="flex flex-row gap-5 sm:flex-col items-center text-[12.5px] sm:text-[15px] justify-center sm:mt-[7.5rem] sm:gap-5">
           <motion.a
             whileHover={{
               scale: 1.1,
               textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
             className=""
+            href="#AboutUs"
           >
             درباره ی ما
           </motion.a>
@@ -68,6 +69,7 @@ export default function Footer() {
               textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
             className=""
+            href="#Services"
           >
             محصولات
           </motion.a>
@@ -77,6 +79,7 @@ export default function Footer() {
               textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
             className=""
+            href="#Projects"
           >
             سرویس ها
           </motion.a>
@@ -86,6 +89,7 @@ export default function Footer() {
               textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
             className=""
+            href="#ContactUs"
           >
             ارتباط با ما
           </motion.a>

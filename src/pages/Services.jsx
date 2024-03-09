@@ -24,19 +24,19 @@ export default function Services() {
       </div>
 
       <div className="flex flex-col gap-4 text-[#363636] text-[17px] text-center sm:flex-row sm:gap-5 sm:text-[22px]">
-        <div className="bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-2 items-center justify-center sm:h-[12rem] w-[20rem] text-[]">
+        <div className="bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-2 items-center justify-center sm:h-[12rem] w-[20rem] text-[15px] sm:text-[20px]">
           <img src={R1} alt="" width={200} />
           <p>
-            درخت و مزرعه <br /> (زعفران، مرغ، گوسفند)
+            مزرعه <br /> (زعفران، مرغ، گوسفند)
           </p>
         </div>
-        <div className=" bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-3 items-center justify-center sm:h-[12rem] w-[20rem]">
+        <div className=" bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-3 items-center justify-center sm:h-[12rem] w-[20rem] text-[15px] sm:text-[20px]">
           <img src={R2} alt="" width={150} />
           <p>
             سها‌م، حق تقدم، واحدهای <br /> صندق و اوراق بهادار
           </p>
         </div>
-        <div className="bg-[#FFFFFF] gap-0 shadow-xl h-[12rem] w-[20rem] rounded-xl flex flex-col items-center justify-center sm:h-[12rem] w-[20rem]">
+        <div className="bg-[#FFFFFF] gap-0 shadow-xl h-[12rem] w-[20rem] rounded-xl flex flex-col items-center justify-center sm:h-[12rem] w-[20rem] text-[15px] sm:text-[20px]">
           <img src={R3} alt="" width={128} />
           <p className=" sm:pb-2">
             ملک
@@ -45,22 +45,18 @@ export default function Services() {
         </div>
       </div>
       <div className="flex flex-col gap-5 text-[#363636] text-[17px] text-center sm:flex-row sm:gap-5 sm:text-[22px]">
-        <div className=" bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-4 items-center justify-center sm:h-[12rem] w-[20rem]">
+        <div className=" bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-4 items-center justify-center sm:h-[12rem] w-[20rem] text-[15px] sm:text-[20px]">
           <img src={R4} alt="" width={130} />
           <p>
             تامین مالی واحدهای
             <br /> معدنی و صنعتی
           </p>
         </div>
-        <div className=" bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-1 sm:gap-4 items-center justify-center sm:h-[12rem] w-[20rem]">
+        <div className=" bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-1 sm:gap-4 items-center justify-center sm:h-[12rem] w-[20rem] text-[15px] sm:text-[20px]">
           <img src={R5} alt="" width={120} />
-          <p>
-            فروش کالاهای
-            <br />
-            آتی
-          </p>
+          <p>فروش درخت</p>
         </div>
-        <div className=" bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-4 items-center justify-center sm:h-[12rem] w-[20rem]">
+        <div className=" bg-[#FFFFFF] shadow-xl h-[10rem] w-[20rem] rounded-xl flex flex-col gap-4 items-center justify-center sm:h-[12rem] w-[20rem] text-[15px] sm:text-[20px]">
           <img src={R6} alt="" width={180} />
           <p>
             گردشگری

@@ -15,7 +15,7 @@ export default function Navbar() {
       dir="rtl"
       className="flex justify-between items-center h-24 max-w-[1240px] mx-auto sm:pr-[14rem]"
     >
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex text-[15px]">
         <motion.a
           whileHover={{
             scale: 1.1,
@@ -67,7 +67,7 @@ export default function Navbar() {
       <div
         className={
           !nav
-            ? "fixed right-0 top-[3rem] w-[50%] h-full border-r-gray-900 bg-[#FFFEFD] z-10 ease-in-out duration-500  "
+            ? "fixed right-0 top-[3rem] w-[50%] h-full border-r-gray-900 bg-[#FFFEFD] z-10 ease-in-out duration-500  text-[13px]"
             : "fixed left-[-100%]"
         }
       >

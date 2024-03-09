@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        IRANSans : [ "IRANSans 400"]
+        IRANSans : [ "IRANSans"]
       }
     },
   },

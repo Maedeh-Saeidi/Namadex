@@ -8,7 +8,7 @@ export default function Slogan() {
       <div className="flex-1 flex justify-center items-center sm:hidden">
         <img src={Laptop} alt="" className="pt-[5rem]" />
       </div>
-      <h1 className="flex items-center text-[#FFFFFF] pr-12 pl-13  text-right text-[1.5rem] sm:pl-[10em] flex-1 sm:w-[50rem] sm:text-[26px] sm:pr-0">
+      <h1 className="flex items-center text-[#FFFFFF] pr-12 pl-13 text-right text-[1.5rem] sm:pl-[10em] flex-1 sm:w-[50rem] sm:text-[23px] sm:pr-0">
         نمادسازی (توکنایز کردن) محصولات شما حرفه ی ماست
       </h1>
     </div>

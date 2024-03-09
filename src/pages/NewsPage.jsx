@@ -2,6 +2,7 @@ import border from "../images/border.jpg";
 import new1 from "../images/new1.jpg";
 import new2 from "../images/new2.jpg";
 import new3 from "../images/new3.jpg";
+import { motion } from "framer-motion";
 
 export default function NewsPage() {
   return (
@@ -10,41 +11,59 @@ export default function NewsPage() {
         <div className="flex-1">
           <img src={border} alt="" className="" />
         </div>
-        <h1 className="font-bold text-[30px] text-left flex-1 pr-[5rem]  sm:pr-[15rem] sm:text-[50px]">
+        <h1 className="font-bold text-[25px] text-left flex-1 pr-[5rem]  sm:pr-[15rem] sm:text-[50px]">
           آخرین اخبار
         </h1>
       </div>
       <div className="flex justify-center items-center">
-        <div className="flex flex-col sm:flex-row gap-10 justify-center items-center text-right text-[14px] mb-[4rem] sm:mb-0">
+        <div className="flex flex-col sm:flex-row gap-10 justify-center items-center text-right text-[12px] sm:text-[13px] mb-[4rem] sm:mb-0">
           <div className="bg-[#fffcf8] shadow-xl flex flex-col gap-3 h-[20rem] w-[20rem] rounded-xl sm:h-[22rem] sm:gap-5">
             <img src={new1} alt="News" />
-            <p>
+            <p className="p-2">
               ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است،..
             </p>
-            <button className="text-[#3FAC8D] text-left ml-4">
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+              className="text-[#3FAC8D] text-left ml-4"
+            >
               بیشتر بخوانید
-            </button>
+            </motion.button>
           </div>
           <div className="bg-[#fffcf8] shadow-xl flex flex-col gap-3 h-[20rem] w-[20rem] rounded-xl sm:h-[22rem] sm:gap-5">
             <img src={new2} alt="News" />
-            <p>
+            <p className="p-2">
               ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است،..
             </p>
-            <button className="text-[#3FAC8D] text-left ml-4">
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+              className="text-[#3FAC8D] text-left ml-4"
+            >
               بیشتر بخوانید
-            </button>
+            </motion.button>
           </div>
           <div className="bg-[#fffcf8] shadow-xl flex flex-col gap-3 h-[20rem] w-[20rem] rounded-xl sm:h-[22rem] sm:gap-5">
             <img src={new3} alt="News" />
-            <p>
+            <p className="p-2">
               ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است،..
             </p>
-            <button className="text-[#3FAC8D] text-left ml-4">
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+              className="text-[#3FAC8D] text-left ml-4"
+            >
               بیشتر بخوانید
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

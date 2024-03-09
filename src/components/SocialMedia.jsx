@@ -17,11 +17,11 @@ export default function SocialMedia({ color }) {
           scale: 1.1,
           boxShadow: "0px 0px 8px rgb(255,255,255)",
         }}
-        className="fa-xl"
+        className="fa-lg rounded-full"
       >
         <a
           href="https://wa.me/989126846896"
-          className="border-neutral-100 border-2 rounded-full p-2"
+          className="border-neutral-100 border-2 rounded-full p-2 pb-1"
         >
           <FontAwesomeIcon
             icon={faWhatsapp}
@@ -35,11 +35,11 @@ export default function SocialMedia({ color }) {
           scale: 1.1,
           boxShadow: "0px 0px 8px rgb(255,255,255)",
         }}
-        className="fa-xl"
+        className="fa-lg rounded-full"
       >
         <a
-          href="https://web.telegram.org/k/#@Namadexx"
-          className="border-neutral-100 border-2 rounded-full p-2"
+          href="https://t.me/Namadexx"
+          className="border-neutral-100 border-2 rounded-full p-2 pb-1"
         >
           <FontAwesomeIcon
             icon={faTelegram}
@@ -53,11 +53,11 @@ export default function SocialMedia({ color }) {
           scale: 1.1,
           boxShadow: "0px 0px 8px rgb(255,255,255)",
         }}
-        className="fa-xl"
+        className="fa-lg rounded-full"
       >
         <a
           href="https://www.instagram.com/namadex.ir?utm_source=qr&igsh=dXFxMXZpaWUxb3Rw"
-          className="border-neutral-100 border-2 rounded-full p-2"
+          className="border-neutral-100 border-2 rounded-full p-2 pb-1"
         >
           <FontAwesomeIcon
             icon={faInstagram}
@@ -71,11 +71,11 @@ export default function SocialMedia({ color }) {
           scale: 1.1,
           boxShadow: "0px 0px 8px rgb(255,255,255)",
         }}
-        className="fa-xl"
+        className="fa-lg rounded-full"
       >
         <a
           href="https://www.facebook.com/profile.php?id=61556810630019&mibextid=ZbWKwL"
-          className="border-neutral-100 border-2 rounded-full p-2"
+          className="border-neutral-100 border-2 rounded-full p-2 pb-1"
         >
           <FontAwesomeIcon
             icon={faFacebookF}
@@ -89,11 +89,11 @@ export default function SocialMedia({ color }) {
           scale: 1.1,
           boxShadow: "0px 0px 8px rgb(255,255,255)",
         }}
-        className="fa-xl"
+        className="fa-lg rounded-full"
       >
         <a
           href="https://youtube.com/@Namadex?si=s2dZ4CeCY97NjcJj"
-          className="border-neutral-100 border-2 rounded-full p-2"
+          className="border-neutral-100 border-2 rounded-full p-2 pb-1"
         >
           <FontAwesomeIcon
             icon={faYoutube}
@@ -106,11 +106,11 @@ export default function SocialMedia({ color }) {
           scale: 1.1,
           boxShadow: "0px 0px 8px rgb(255,255,255)",
         }}
-        className="fa-xl"
+        className="fa-lg rounded-full"
       >
         <a
           href="mailto:Namadex.ir@gmail.com"
-          className="border-neutral-100 border-2 rounded-full p-2"
+          className="border-neutral-100 border-2 rounded-full p-2 pb-1"
         >
           <FontAwesomeIcon
             icon={faAt}

@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="font-IRANSans       ">
+    <div className="font-IRANSans">
       <HomePage></HomePage>
       <AboutUs></AboutUs>
       <Services></Services>
