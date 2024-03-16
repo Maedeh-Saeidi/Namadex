@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import NewsPage from "./pages/NewsPage";
 import Footer from "./components/Footer";
+import Process from "./pages/Process";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Slogan></Slogan>
       <Companies></Companies>
       <Projects></Projects>
+      <Process></Process>
       <ContactUs></ContactUs>
       <NewsPage></NewsPage>
       <Footer></Footer>
