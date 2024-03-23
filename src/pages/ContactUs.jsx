@@ -26,7 +26,6 @@ export default function ContactUs() {
         const result = await axios(configuration);
         setFeedback("پیام با موفقیت ارسال شد");
         setIsLoading(true);
-        console.log(result);
       } catch (error) {
         setFeedback("لطفا دوباره تلاش کنید");
         console.error(error);
@@ -36,6 +35,8 @@ export default function ContactUs() {
   };
   useEffect(() => {
     if (isLoading) {
+      setEmail("");
+      setMessage("");
       setTimeout(() => {
         setIsLoading(false);
       }, 3000);
