@@ -95,7 +95,7 @@ export default function ContactUs() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: isLoading ? 1 : 0, y: isLoading ? 0 : 20 }}
           transition={{ duration: 0.5 }}
-          className="absolute bottom-[7rem] left-[45%] bg-lightblue pt-3 pb-3 pr-10 pl-10 text-center bg-gray-100 rounded text-[13px]"
+          className="absolute bottom-[5rem] left-[45%] bg-lightblue pt-3 pb-3 pr-10 pl-10 text-center bg-gray-100 rounded text-[13px]"
         >
           {feedback}
         </motion.div>
