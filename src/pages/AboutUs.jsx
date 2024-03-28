@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import tokenize from "../images/tokenize.jpeg";
 import { motion } from "framer-motion";
 export default function AboutUs() {
+
   return (
     <div
       id="AboutUs"

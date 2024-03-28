@@ -24,10 +24,9 @@ export default function HomePage() {
               با ما به دنیای جدید کسب و کار بپیوندید
             </h2>
             <h3 className="w-[18rem] text-[18px] text-[#6A7875] sm:text-[20px] sm:w-auto">
-              قابلیت عرضه املاک، دارایی ها کشاورزی و دیگر تولیدات شما
+              قابلیت عرضه املاک، دارایی های کشاورزی و دیگر دارایی های شما
             </h3>
             <h3 className="text-[18px] text-[#6A7875] sm:text-[20px]">
-              {" "}
               در شرکت ما
             </h3>
           </div>
@@ -36,7 +35,7 @@ export default function HomePage() {
               scale: 1.1,
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
-            className=" text-[15px] bg-[#3DA88C] text-white py-2.5 px-5 rounded absolute right-10 bottom-[5rem] sm:bottom-[2rem] sm:right-[4rem]"
+            className=" text-[15px] bg-[#3DA88C] text-white py-2.5 px-5 rounded absolute right-10 bottom-[5rem] sm:bottom-[3rem] sm:right-[4rem]"
           >
             !ثبت نام کنید
           </motion.button>
