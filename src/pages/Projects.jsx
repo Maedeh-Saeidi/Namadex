@@ -1,8 +1,5 @@
-import Teehoo from "../images/Teehoo.jpg";
 import TeehooSvg from "../images/Teehoo.svg";
-import Jalizan from "../images/Jalizan.jpg";
 import JalizanSvg from "../images/Jalizan.svg";
-import ecosam from "../images/ecosam.jpg";
 import AcometrSvg from "../images/Acometr.svg";
 import { motion } from "framer-motion";
 import { SectionsContext } from "../components/SectionsContext";
@@ -16,7 +13,6 @@ import "swiper/css/scrollbar";
 
 export default function Projects() {
   const { sections, isLoading } = useContext(SectionsContext);
-  console.log(sections);
   return (
     isLoading && (
       <div

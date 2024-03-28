@@ -11,9 +11,10 @@ export default function Services() {
         className="h-full gap-4 mb-10 bg-[url(../src/images/ServicesBI.jpg)] bg-no-repeat sm:bg-cover flex flex-col justify-center items-center sm:gap-7 sm:h-screen sm:mb-0 xl:h-[50rem]"
       >
         <div className="pt-10 sm:pt-3 flex flex-col gap-1 items-center justify-center sm:mt-0 mb-5">
-          <h1 className="w-[80%] text-center text-[20px] text-[#4D4D4D] font-bold sm:text-[28px] sm:w-[60%] sm:pt-10">
-            {sections[1].title}
-          </h1>
+          <h1
+            className="w-[100%] text-center text-[20px] text-[#4D4D4D] font-bold sm:text-[28px] sm:w-[100%] sm:pt-10"
+            dangerouslySetInnerHTML={{ __html: sections[1].title }}
+          ></h1>
         </div>
         <div className="flex-1 sm:w-[80%] 2xl:w-[80%] gap-3 flex flex-wrap justify-center">
           {isLoading &&
