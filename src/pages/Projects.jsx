@@ -37,7 +37,7 @@ export default function Projects() {
             {sections[2].posts.map((post, index) => (
               <SwiperSlide key={index}>
                 <div
-                  className={`bg-white w-[18rem] h-[24rem] sm:h-[25rem] sm:w-[22rem] rounded-2xl ${
+                  className={`bg-white 2xl:w-[30rem] 2xl:h-[31rem] w-[18rem] h-[24rem] sm:h-[25rem] sm:w-[22rem] rounded-2xl ${
                     post.id % 2 === 1 ? "border-2 border-[#3DA88C] mt-10" : ""
                   }`}
                 >
@@ -54,14 +54,14 @@ export default function Projects() {
                         src={`https://api.namadex.ir/api/v1/section/post/${post.id}/image`}
                         width={250}
                         alt={post.title}
-                        className="w-[22rem] items-center rounded-2xl"
+                        className="w-[22rem] items-center rounded-2xl 2xl:w-[30rem]"
                       />
                       <img
                         width={100}
                         src={`https://api.namadex.ir/api/v1/section/post/${post.id}/icon`}
                         alt={post.id}
                       />
-                      <p className="w-[80%] text-[20px] font-bold text-[#4D4D4D] text-center">
+                      <p className="w-[80%] text-[20px] 2xl:text-[25px] font-bold text-[#4D4D4D] text-center">
                         {post.title}
                       </p>
                     </div>
