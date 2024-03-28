@@ -20,7 +20,7 @@ export default function Services() {
             sections[1].posts.map((post, index) => (
               <div
                 key={index}
-                className="w-[20rem] h-[13rem] gap-4 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem]"
+                className="w-[20rem] h-[13rem] gap-3 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem]"
               >
                 <img
                   width={180}
@@ -28,9 +28,10 @@ export default function Services() {
                   alt={post.title}
                   className="w-[150px]"
                 />
-                <p className="w-[12rem] text-[#363636] 2xl:text-[22px] text-center sm:text-[20px] sm:w-[18rem]">
-                  {post.title}
-                </p>
+                <p
+                  className="w-[15rem] text-[#363636] 2xl:text-[22px] text-center sm:text-[20px] sm:w-[18rem]"
+                  dangerouslySetInnerHTML={{ __html: post.title }}
+                ></p>
               </div>
             ))}
         </div>
