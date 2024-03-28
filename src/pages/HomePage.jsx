@@ -11,7 +11,7 @@ export default function HomePage() {
           <img src={theMan} alt="The Man" />
         </div>
         <div className="pb-10 flex-1 flex flex-col items-end text-right relative sm:flex sm:gap-[2rem] h-[30rem] sm:pb-0">
-          <div className="mr-[2.5rem] gap-3  flex flex-col items-end sm:gap-2 sm:m-10 sm:mr-[4rem]">
+          <div className="mr-[2.5rem] gap-3 flex flex-col items-end sm:gap-2 sm:m-10 sm:mr-[4rem]">
             <motion.h1
               initial={{ x: "-10vw" }}
               animate={{ x: 0 }}

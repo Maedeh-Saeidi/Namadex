@@ -11,20 +11,23 @@ import ContactUs from "./pages/ContactUs";
 import NewsPage from "./pages/NewsPage";
 import Footer from "./components/Footer";
 import Process from "./pages/Process";
+import { SectionsProvider } from "./components/SectionsContext";
 
 function App() {
   return (
     <div className="font-IRANSans">
-      <HomePage></HomePage>
-      <AboutUs></AboutUs>
-      <Services></Services>
-      <Slogan></Slogan>
-      <Companies></Companies>
-      <Projects></Projects>
-      <Process></Process>
-      <ContactUs></ContactUs>
-      <NewsPage></NewsPage>
-      <Footer></Footer>
+      <SectionsProvider>
+        <HomePage></HomePage>
+        <AboutUs></AboutUs>
+        <Services></Services>
+        <Slogan></Slogan>
+        <Companies></Companies>
+        <Projects></Projects>
+        <Process></Process>
+        <ContactUs></ContactUs>
+        <NewsPage></NewsPage>
+        <Footer></Footer>
+      </SectionsProvider>
     </div>
   );
 }

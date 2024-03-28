@@ -99,8 +99,6 @@ export default function Process() {
             slidesPerView={slidesPerView}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide className="p-10">
               <div className="flex flex-col items-center gap-10">
