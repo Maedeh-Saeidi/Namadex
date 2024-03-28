@@ -1,10 +1,30 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [nav, setNav] = useState(true);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setNav(true);
+      }
+    };
+
+    const handleScroll = () => {
+      setNav(true);
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleNav = () => {
     setNav(!nav);
@@ -12,6 +32,7 @@ export default function Navbar() {
 
   return (
     <div
+      ref={navRef}
       dir="rtl"
       className="flex justify-between items-center h-24 max-w-[1240px] mx-auto sm:pr-[14rem]"
     >
@@ -22,7 +43,8 @@ export default function Navbar() {
             boxShadow: "0px 0px 8px rgb(255,255,255)",
           }}
           href="#AboutUs"
-          className="p-4"
+          onClick={handleNav}
+          className="p-4 "
         >
           درباره ی ما
         </motion.a>
@@ -31,8 +53,9 @@ export default function Navbar() {
             scale: 1.1,
             boxShadow: "0px 0px 8px rgb(255,255,255)",
           }}
+          onClick={handleNav}
           href="#Services"
-          className="p-4"
+          className="p-4 "
         >
           محصولات
         </motion.a>
@@ -41,8 +64,9 @@ export default function Navbar() {
             scale: 1.1,
             boxShadow: "0px 0px 8px rgb(255,255,255)",
           }}
+          onClick={handleNav}
           href="#Projects"
-          className="p-4"
+          className="p-4 "
         >
           سرویس ها
         </motion.a>
@@ -51,8 +75,9 @@ export default function Navbar() {
             scale: 1.1,
             boxShadow: "0px 0px 8px rgb(255,255,255)",
           }}
+          onClick={handleNav}
           href="#ContactUs"
-          className="p-4"
+          className="p-4 "
         >
           ارتباط با ما
         </motion.a>
@@ -72,34 +97,50 @@ export default function Navbar() {
         }
       >
         <ul className="p-1 pt-[5rem] flex flex-col gap-2">
-          <a
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             href="#AboutUs"
             onClick={handleNav}
             className="p-4 border-b-2 border-[#3FAC8D]"
           >
             درباره ی ما
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             onClick={handleNav}
             href="#Services"
             className="p-4 border-b-2 border-[#3FAC8D]"
           >
             محصولات
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             onClick={handleNav}
             href="#Projects"
             className="p-4 border-b-2 border-[#3FAC8D]"
           >
             سرویس ها
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             onClick={handleNav}
             href="#ContactUs"
             className="p-4 border-b-2 border-[#3FAC8D]"
           >
             ارتباط با ما
-          </a>
+          </motion.a>
         </ul>
       </div>
     </div>

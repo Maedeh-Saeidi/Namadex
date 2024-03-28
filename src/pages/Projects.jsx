@@ -17,7 +17,7 @@ export default function Projects() {
     isLoading && (
       <div
         id="Projects"
-        className="h-max-screen bg-[url(../src/images/ProjectsBI.jpg)] bg-right bg-no-repeat bg-cover flex flex-col justify-center items-center gap-10 sm:h-screen xl:h-[60rem]"
+        className="h-[40rem] bg-[url(../src/images/ProjectsBI.jpg)] bg-right bg-no-repeat bg-cover flex flex-col justify-center items-center gap-10 sm:h-screen xl:h-[60rem]"
       >
         <h1 className="flex font-bold text-[25px] mt-5 text-[#4D4D4D] sm:text-[50px] sm:mt-0">
           {sections[2].title}
