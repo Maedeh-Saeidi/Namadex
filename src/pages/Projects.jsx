@@ -53,7 +53,7 @@ export default function Projects() {
                         className="w-[22rem] items-center rounded-2xl 2xl:w-[30rem]"
                       />
                       <img
-                        width={100}
+                        width={90}
                         src={`https://api.namadex.ir/api/v1/section/post/${post.id}/icon`}
                         alt={post.id}
                       />
