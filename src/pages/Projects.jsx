@@ -23,7 +23,7 @@ export default function Projects() {
         <h1 className="flex font-bold text-[25px] mt-5 text-[#4D4D4D] sm:text-[50px] sm:mt-0">
           {sections[2].title}
         </h1>
-        <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[90%] rounded-xl">
+        <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[90%] rounded-xl pl-7 sm:pl-0">
           <Swiper
             modules={[Pagination, Scrollbar, A11y]}
             spaceBetween={50}

@@ -26,7 +26,7 @@ export default function NewsPage() {
           </h1>
         </div>
         <div className="flex justify-center items-center">
-          <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[90%] rounded-xl">
+          <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[90%] rounded-xl pl-4 sm:pl-0">
             <Swiper
               modules={[Pagination, Scrollbar, A11y]}
               spaceBetween={50}
