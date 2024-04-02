@@ -33,6 +33,9 @@ export default function NewsPage() {
               slidesPerView={1}
               breakpoints={{
                 600: {
+                  slidesPerView: 2, // Show 3 slides when screen width is 640px or more
+                },
+                1300: {
                   slidesPerView: 3, // Show 3 slides when screen width is 640px or more
                 },
               }}
@@ -42,6 +45,7 @@ export default function NewsPage() {
               {sections[3].posts.map((post, index) => (
                 <SwiperSlide key={index}>
                   <div
+                    dir="rtl"
                     className={`bg-white 2xl:w-[35rem] 2xl:h-[37rem] w-[20rem] h-[32rem] sm:h-[31rem] sm:w-[22rem] rounded-2xl shadow-xl`}
                   >
                     <motion.a

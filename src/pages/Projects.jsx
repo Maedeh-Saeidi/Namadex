@@ -30,6 +30,9 @@ export default function Projects() {
             slidesPerView={1}
             breakpoints={{
               600: {
+                slidesPerView: 2, // Show 3 slides when screen width is 640px or more
+              },
+              1300: {
                 slidesPerView: 3, // Show 3 slides when screen width is 640px or more
               },
             }}
