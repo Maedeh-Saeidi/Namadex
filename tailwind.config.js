@@ -6,11 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1600px', // Customize the 2xl breakpoint to start at 1700px
+      },
       fontFamily: {
-        IRANSans : [ "IRANSans"]
-      }
+        IRANSans: ['IRANSans'],
+      },
     },
   },
   plugins: [],
-}
-
+};

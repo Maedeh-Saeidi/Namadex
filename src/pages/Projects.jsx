@@ -23,7 +23,7 @@ export default function Projects() {
         <h1 className="flex font-bold text-[25px] mt-5 text-[#4D4D4D] sm:text-[50px] sm:mt-0">
           {sections[2].title}
         </h1>
-        <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[80%] rounded-xl ">
+        <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[90%] rounded-xl">
           <Swiper
             modules={[Pagination, Scrollbar, A11y]}
             spaceBetween={50}
@@ -32,7 +32,7 @@ export default function Projects() {
               600: {
                 slidesPerView: 2, // Show 3 slides when screen width is 640px or more
               },
-              1300: {
+              1000: {
                 slidesPerView: 3, // Show 3 slides when screen width is 640px or more
               },
             }}
@@ -42,7 +42,7 @@ export default function Projects() {
             {sections[2].posts.map((post, index) => (
               <SwiperSlide key={index}>
                 <div
-                  className={`bg-white 2xl:w-[30rem] 2xl:h-[32rem] w-[18rem] h-[24rem] sm:h-[25rem] sm:w-[22rem] rounded-2xl shadow-xl ${
+                  className={`bg-white 2xl:w-[30rem] 2xl:h-[32rem] w-[18rem] h-[24rem] xl:h-[27rem] xl:w-[24rem] lg:h-[24rem] lg:w-[19rem]  rounded-2xl shadow-xl ${
                     post.id % 2 === 1 ? "border-2 border-[#3DA88C] mt-10" : ""
                   }`}
                 >
@@ -58,7 +58,7 @@ export default function Projects() {
                       <img
                         src={`https://api.namadex.ir/api/v1/section/post/${post.id}/image`}
                         alt={post.title}
-                        className="w-[22rem] items-center rounded-2xl 2xl:w-[30rem]"
+                        className="w-[24rem] items-center rounded-2xl 2xl:w-[30rem]"
                       />
                       <img
                         width={90}

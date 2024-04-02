@@ -26,7 +26,7 @@ export default function NewsPage() {
           </h1>
         </div>
         <div className="flex justify-center items-center">
-          <div className="flex items-center  mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[80%] rounded-xl">
+          <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[90%] rounded-xl">
             <Swiper
               modules={[Pagination, Scrollbar, A11y]}
               spaceBetween={50}
@@ -35,7 +35,7 @@ export default function NewsPage() {
                 600: {
                   slidesPerView: 2, // Show 3 slides when screen width is 640px or more
                 },
-                1300: {
+                1000: {
                   slidesPerView: 3, // Show 3 slides when screen width is 640px or more
                 },
               }}
@@ -46,7 +46,7 @@ export default function NewsPage() {
                 <SwiperSlide key={index}>
                   <div
                     dir="rtl"
-                    className={`bg-white 2xl:w-[35rem] 2xl:h-[37rem] w-[20rem] h-[32rem] sm:h-[31rem] sm:w-[22rem] rounded-2xl shadow-xl`}
+                    className={`bg-white 2xl:w-[30rem] 2xl:h-[37rem] w-[20rem] h-[32rem] xl:h-[31rem] lg:w-[20rem] xl:w-[24rem] rounded-2xl shadow-xl`}
                   >
                     <motion.a
                       whileHover={{
@@ -60,7 +60,7 @@ export default function NewsPage() {
                         <img
                           src={`https://api.namadex.ir/api/v1/section/post/${post.id}/image`}
                           alt={post.title}
-                          className="w-[22rem] items-center rounded-2xl 2xl:w-[30rem]"
+                          className="w-[24rem] items-center rounded-2xl 2xl:w-[30rem]"
                         />
                         <p
                           className="font-bold w-[85%] text-[17px] 2xl:text-[20px] text-[#4D4D4D] pr-4"
