@@ -5,6 +5,12 @@ import new3 from "../images/new3.jpg";
 import { motion } from "framer-motion";
 import { SectionsContext } from "../components/SectionsContext";
 import { useContext } from "react";
+import { Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default function NewsPage() {
   const { sections, isLoading } = useContext(SectionsContext);
@@ -20,55 +26,63 @@ export default function NewsPage() {
           </h1>
         </div>
         <div className="flex justify-center items-center">
-          <div className="flex flex-col sm:flex-row gap-10 justify-center items-center text-right text-[12px] sm:text-[13px] mb-[4rem] sm:mb-0">
-            <div className="bg-[#fffcf8] shadow-xl flex flex-col gap-3 h-[20rem] w-[20rem] rounded-xl sm:h-[22rem] sm:gap-5">
-              <img src={new1} alt="News" />
-              <p className="p-2">
-                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،..
-              </p>
-              <motion.button
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 0px 8px rgb(255,255,255)",
-                }}
-                className="text-[#3FAC8D] text-left ml-4"
-              >
-                بیشتر بخوانید
-              </motion.button>
-            </div>
-            <div className="bg-[#fffcf8] shadow-xl flex flex-col gap-3 h-[20rem] w-[20rem] rounded-xl sm:h-[22rem] sm:gap-5">
-              <img src={new2} alt="News" />
-              <p className="p-2">
-                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،..
-              </p>
-              <motion.button
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 0px 8px rgb(255,255,255)",
-                }}
-                className="text-[#3FAC8D] text-left ml-4"
-              >
-                بیشتر بخوانید
-              </motion.button>
-            </div>
-            <div className="bg-[#fffcf8] shadow-xl flex flex-col gap-3 h-[20rem] w-[20rem] rounded-xl sm:h-[22rem] sm:gap-5">
-              <img src={new3} alt="News" />
-              <p className="p-2">
-                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،..
-              </p>
-              <motion.button
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 0px 8px rgb(255,255,255)",
-                }}
-                className="text-[#3FAC8D] text-left ml-4"
-              >
-                بیشتر بخوانید
-              </motion.button>
-            </div>
+          <div className="flex items-center  mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[80%] rounded-xl">
+            <Swiper
+              modules={[Pagination, Scrollbar, A11y]}
+              spaceBetween={50}
+              slidesPerView={1}
+              breakpoints={{
+                600: {
+                  slidesPerView: 3, // Show 3 slides when screen width is 640px or more
+                },
+              }}
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+            >
+              {sections[3].posts.map((post, index) => (
+                <SwiperSlide key={index}>
+                  <div
+                    className={`bg-white 2xl:w-[35rem] 2xl:h-[37rem] w-[20rem] h-[32rem] sm:h-[31rem] sm:w-[22rem] rounded-2xl shadow-xl`}
+                  >
+                    <motion.a
+                      whileHover={{
+                        scale: 1.1,
+                        textShadow: "0px 0px 8px rgb(255,255,255)",
+                      }}
+                      target="_blank"
+                      href={post.link}
+                    >
+                      <div className="flex flex-col gap-6 items-center justify-center rounded-2xl">
+                        <img
+                          src={`https://api.namadex.ir/api/v1/section/post/${post.id}/image`}
+                          alt={post.title}
+                          className="w-[22rem] items-center rounded-2xl 2xl:w-[30rem]"
+                        />
+                        <p
+                          className="font-bold w-[85%] text-[17px] 2xl:text-[20px] text-[#4D4D4D] pr-4"
+                          dangerouslySetInnerHTML={{ __html: post.title }}
+                        ></p>
+                        <p
+                          className="font-bold w-[85%] text-[15px] 2xl:text-[17px] text-[#4D4D4D] pr-4"
+                          dangerouslySetInnerHTML={{ __html: post.description }}
+                        ></p>
+                        <motion.a
+                          href={post.link}
+                          target="_blank"
+                          whileHover={{
+                            scale: 1.1,
+                            boxShadow: "0px 0px 8px rgb(255,255,255)",
+                          }}
+                          className="text-[#3FAC8D] text-[15px] pr-[11rem]"
+                        >
+                          بیشتر بخوانید
+                        </motion.a>
+                      </div>
+                    </motion.a>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

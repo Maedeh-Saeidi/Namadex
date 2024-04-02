@@ -35,7 +35,7 @@ export default function AboutUs() {
       )}
       <div className="flex-1 relative flex flex-col justify-center">
         <img
-          className="absolute mb-[1rem]  sm:right-20 mt-0"
+          className="absolute mb-[1rem] sm:right-20 mt-0"
           src={`https://api.namadex.ir/api/v1/section/2/image`}
           alt="AboutUs Image"
           width={450}
