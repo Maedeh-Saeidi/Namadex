@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import icon from "../images/NamadEx.png";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
@@ -37,6 +38,16 @@ export default function Navbar() {
       className="flex justify-between items-center h-24 max-w-[1240px] mx-auto sm:pr-[14rem]"
     >
       <ul className="hidden md:flex text-[15px]">
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
+          href="https://namadex.ir/"
+          className="p-4 2xl:w-[18%] xl:w-[20%] xl:pt-4 md:w-[50%]"
+        >
+          <img src={icon} alt="Logo" />
+        </motion.a>
         <motion.a
           whileHover={{
             scale: 1.1,
@@ -97,6 +108,16 @@ export default function Navbar() {
         }
       >
         <ul className="p-1 pt-[5rem] flex flex-col gap-2">
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+            href="https://namadex.ir/"
+            className="p-6 pb-5"
+          >
+            <img src={icon} alt="Logo" width={100} />
+          </motion.a>
           <motion.a
             whileHover={{
               scale: 1.1,

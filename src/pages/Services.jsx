@@ -1,8 +1,9 @@
 import { SectionsContext } from "../components/SectionsContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 export default function Services() {
   const { sections, isLoading } = useContext(SectionsContext);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     isLoading && (
@@ -21,7 +22,11 @@ export default function Services() {
             sections[1].posts.map((post, index) => (
               <div
                 key={index}
-                className="w-[20rem] h-[13rem] gap-3 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem]"
+                className={`w-[20rem] h-[13rem] gap-3 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] ${
+                  hoveredIndex === index ? "transform scale-125" : ""
+                }`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
               >
                 <img
                   width={180}

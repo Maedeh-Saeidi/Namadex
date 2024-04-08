@@ -1,5 +1,5 @@
 import SocialMedia from "./SocialMedia";
-import namadSvg from "../images/Namadex.svg";
+import namadSvg from "../images/MaskLogo.svg";
 import { motion } from "framer-motion";
 
 export default function Footer() {
@@ -28,16 +28,21 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-5 flex-1 flex flex-col gap-10 items-center justify-center sm:mt-[10rem]">
-        <a href="" className="hidden sm:flex flex-col items-center gap-2">
+        <a
+          href=""
+          className="hidden sm:flex flex-col items-center gap-2 2xl:pt-10 2xl:gap-0"
+        >
           <motion.img
             whileHover={{
               scale: 1.1,
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
+            className=""
+            width={150}
             src={namadSvg}
             alt="Namadex"
           />
-          <motion.h1
+          {/* <motion.h1
             whileHover={{
               scale: 1.1,
               textShadow: "0px 0px 8px rgb(255,255,255)",
@@ -45,7 +50,7 @@ export default function Footer() {
             className="font-bold text-[24px]"
           >
             Namadex
-          </motion.h1>
+          </motion.h1> */}
         </a>
         <div>
           <SocialMedia color={"#FFFFFF"}></SocialMedia>
@@ -97,8 +102,8 @@ export default function Footer() {
       </div>
       <div className="sm:hidden flex-1 flex justify-center items-center mb-5 ml-5">
         <div className="flex flex-col gap-1 mb-[1rem] text-[15px]">
-          <a href="https://namadex.ir/" target="_blank" className="pl-[3rem]">
-            <img src={namadSvg} alt="" width={50} />
+          <a href="https://namadex.ir/" target="_blank" className="pl-7">
+            <img src={namadSvg} alt="" width={100} />
           </a>
           <a href="tel:982188600820+" className="text-center mt-2">
             982188600820+
