@@ -1,15 +1,33 @@
+import Modal from "../components/Modal";
 import { SectionsContext } from "../components/SectionsContext";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 export default function Services() {
   const { sections, isLoading } = useContext(SectionsContext);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState({});
 
+  const openModal = (postId) => {
+    setIsModalOpen(true);
+    const post = sections[1].posts.find((post) => post.id === postId);
+    setModalData({
+      title: post.title,
+      description: post.description,
+      id: post.id,
+    });
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     isLoading && (
       <div
         id="Services"
-        className="h-full gap-4 mb-10 bg-[url(../src/images/ServicesBI.jpg)] bg-no-repeat sm:bg-cover flex flex-col justify-center items-center sm:gap-7 sm:h-screen sm:mb-0 xl:h-[50rem]"
+        className={`
+  h-full gap-4 mb-10 bg-[url(../src/images/ServicesBI.jpg)] bg-no-repeat sm:bg-cover 
+  flex flex-col justify-center items-center sm:gap-7 sm:h-screen sm:mb-0 xl:h-[50rem]
+  ${isModalOpen ? "blur-5" : ""} 
+`}
       >
         <div className="pt-10 sm:pt-3 flex flex-col gap-1 items-center justify-center sm:mt-0 mb-5">
           <h1
@@ -21,12 +39,9 @@ export default function Services() {
           {isLoading &&
             sections[1].posts.map((post, index) => (
               <div
+                onClick={() => openModal(post.id)}
                 key={index}
-                className={`w-[20rem] h-[13rem] gap-3 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] ${
-                  hoveredIndex === index ? "transform scale-150" : ""
-                }`}
-                // onMouseEnter={() => setHoveredIndex(index)}
-                // onMouseLeave={() => setHoveredIndex(null)}
+                className={`w-[20rem] h-[13rem] gap-3 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] `}
               >
                 <img
                   width={180}
@@ -41,6 +56,7 @@ export default function Services() {
               </div>
             ))}
         </div>
+        <Modal isOpen={isModalOpen} onClose={closeModal} data={modalData} />
       </div>
     )
   );
