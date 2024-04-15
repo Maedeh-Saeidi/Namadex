@@ -53,8 +53,9 @@ export default function Projects() {
                     }}
                     target="_blank"
                     href={post.link}
+                    className="hover:cursor-pointer "
                   >
-                    <div className="flex flex-col gap-6 items-center justify-center rounded-xl ">
+                    <div className="flex flex-col gap-6 items-center justify-center rounded-xl">
                       <img
                         src={`https://api.namadex.ir/api/v1/section/post/${post.id}/image`}
                         alt={post.title}

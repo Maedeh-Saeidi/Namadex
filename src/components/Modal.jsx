@@ -4,17 +4,15 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Modal = ({ isOpen, onClose, data }) => {
   useEffect(() => {
-    const handleScroll = () => {
-      onClose();
-    };
-
     if (isOpen) {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
     }
-  }, [isOpen, onClose]);
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   return (
     <AnimatePresence>

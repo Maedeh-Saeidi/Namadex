@@ -35,7 +35,6 @@ export default function Footer() {
           <motion.img
             whileHover={{
               scale: 1.1,
-              boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
             className=""
             width={150}

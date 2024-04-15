@@ -31,23 +31,27 @@ export default function Navbar() {
     setNav(!nav);
   };
 
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div
       ref={navRef}
       dir="rtl"
-      className="flex justify-between items-center h-24 max-w-[1240px] mx-auto sm:pr-[14rem]"
+      className="flex justify-between items-center h-24 max-w-[1240px] mx-auto sm:pr-[14rem] relative"
     >
-      <ul className="hidden md:flex text-[15px]">
+      {!isMobile && (
         <motion.a
           whileHover={{
             scale: 1.1,
             boxShadow: "0px 0px 8px rgb(255,255,255)",
           }}
           href="https://namadex.ir/"
-          className="p-4 2xl:w-[18%] xl:w-[20%] xl:pt-4 md:w-[50%]"
+          className="p-4 2xl:w-[15%] xl:w-[20%] xl:pt-4 md:w-[20%] sm:absolute right-[2.5rem] sm:right-[3rem]"
         >
           <img src={icon} alt="Logo" />
         </motion.a>
+      )}
+      <ul className="hidden md:flex text-[15px]">
         <motion.a
           whileHover={{
             scale: 1.1,
