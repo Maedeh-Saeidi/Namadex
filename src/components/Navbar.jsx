@@ -13,11 +13,9 @@ export default function Navbar() {
         setNav(true);
       }
     };
-
     const handleScroll = () => {
       setNav(true);
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("scroll", handleScroll);
 
@@ -26,13 +24,10 @@ export default function Navbar() {
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   const handleNav = () => {
     setNav(!nav);
   };
-
   const isMobile = window.innerWidth <= 768;
-
   return (
     <div
       ref={navRef}

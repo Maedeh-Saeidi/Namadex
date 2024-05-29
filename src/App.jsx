@@ -1,7 +1,6 @@
 import "./App.css";
 import "./fonts/IRANSans 400.ttf";
 import HomePage from "./pages/HomePage";
-import Header from "./components/Header";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Slogan from "./components/Slogan";
@@ -22,8 +21,8 @@ function App() {
         <Services></Services>
         <Slogan></Slogan>
         <Companies></Companies>
-        <Projects></Projects>
         <Process></Process>
+        <Projects></Projects>
         <ContactUs></ContactUs>
         <NewsPage></NewsPage>
         <Footer></Footer>

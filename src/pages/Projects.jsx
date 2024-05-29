@@ -1,9 +1,6 @@
-import TeehooSvg from "../images/Teehoo.svg";
-import JalizanSvg from "../images/Jalizan.svg";
-import AcometrSvg from "../images/Acometr.svg";
 import { motion } from "framer-motion";
 import { SectionsContext } from "../components/SectionsContext";
-import { Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useContext } from "react";
 
@@ -13,7 +10,6 @@ import "swiper/css/scrollbar";
 
 export default function Projects() {
   const { sections, isLoading } = useContext(SectionsContext);
-  console.log(sections);
   return (
     isLoading && (
       <div
@@ -25,19 +21,18 @@ export default function Projects() {
         </h1>
         <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[90%] rounded-xl pl-7 sm:pl-0">
           <Swiper
-            modules={[Pagination, Scrollbar, A11y]}
+            modules={[Pagination, A11y]}
             spaceBetween={50}
             slidesPerView={1}
             breakpoints={{
               600: {
-                slidesPerView: 2, // Show 3 slides when screen width is 640px or more
+                slidesPerView: 2,
               },
               1000: {
-                slidesPerView: 3, // Show 3 slides when screen width is 640px or more
+                slidesPerView: 3,
               },
             }}
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
           >
             {sections[2].posts.map((post, index) => (
               <SwiperSlide key={index}>

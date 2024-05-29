@@ -6,18 +6,8 @@ import three from "../images/3.png";
 import imageOne from "../images/image1.png";
 import imageTwo from "../images/image2.png";
 import imageThree from "../images/image3.png";
-import bg from "../images/bg-process.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-import { EffectCoverflow } from "swiper/modules";
-import { motion } from "framer-motion";
-
+import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -50,7 +40,7 @@ export default function Process() {
         <div className="flex flex-col sm:flex-col gap-10 sm:gap-0">
           <div className="flex flex-row justify-center items-center sm:h-40 mt-10">
             <div className="flex-1">
-              <img src={border} alt="" className="" />
+              <img src={border} />
             </div>
             <h1 className="flex-1 font-bold text-[20px] text-[#3DA88C] text-left pr-[4rem] sm:pr-[15rem] sm:text-[30px] 2xl:text-[45px]">
               فرآیند آماده سازی
@@ -88,17 +78,17 @@ export default function Process() {
         </div>
         <div className="flex items-center">
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            modules={[Navigation, Pagination, A11y, Autoplay]}
             speed={500}
             autoplay={{
-              delay: 1200,
+              delay: 1500,
               disableOnInteraction: false,
             }}
             loop={true}
             spaceBetween={50}
             slidesPerView={slidesPerView}
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
+            effect={"fade"}
           >
             <SwiperSlide className="p-10">
               <div className="flex flex-col items-center gap-10">
@@ -146,7 +136,4 @@ export default function Process() {
       </div>
     </div>
   );
-}
-
-{
 }

@@ -1,7 +1,8 @@
 import Modal from "../components/Modal";
 import { SectionsContext } from "../components/SectionsContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { motion } from "framer-motion";
+import eye from "../images/eye.svg";
 
 export default function Services() {
   const { sections, isLoading } = useContext(SectionsContext);
@@ -16,9 +17,6 @@ export default function Services() {
       description: post.description,
       id: post.id,
     });
-  };
-  const closeModal = () => {
-    setIsModalOpen(false);
   };
   return (
     isLoading && (
@@ -46,8 +44,14 @@ export default function Services() {
                 }}
                 onClick={() => openModal(post.id)}
                 key={index}
-                className={`w-[20rem] hover:cursor-pointer h-[13rem] gap-3 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] `}
+                className={`w-[20rem] hover:cursor-pointer h-[13rem] gap-3 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] relative
+                `}
               >
+                <img
+                  src={eye}
+                  alt="zoom"
+                  className="absolute top-2 right-2 w-[10%]"
+                />
                 <img
                   width={180}
                   src={`https://api.namadex.ir/api/v1/section/post/${post.id}/image`}
@@ -61,7 +65,11 @@ export default function Services() {
               </motion.div>
             ))}
         </div>
-        <Modal isOpen={isModalOpen} onClose={closeModal} data={modalData} />
+        <Modal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          data={modalData}
+        />
       </div>
     )
   );

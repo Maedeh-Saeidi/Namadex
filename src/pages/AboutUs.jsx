@@ -1,5 +1,4 @@
-import { useContext, useEffect } from "react";
-import tokenize from "../images/tokenize.jpeg";
+import { useContext } from "react";
 import { motion } from "framer-motion";
 import { SectionsContext } from "../components/SectionsContext";
 

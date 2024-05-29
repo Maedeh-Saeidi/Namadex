@@ -1,11 +1,8 @@
 import border from "../images/border.jpg";
-import new1 from "../images/new1.jpg";
-import new2 from "../images/new2.jpg";
-import new3 from "../images/new3.jpg";
 import { motion } from "framer-motion";
 import { SectionsContext } from "../components/SectionsContext";
 import { useContext } from "react";
-import { Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -28,19 +25,18 @@ export default function NewsPage() {
         <div className="flex justify-center items-center">
           <div className="flex items-center mb-10 text-[#4D4D4D] text-[15px] sm:text-[20px] w-[90%] rounded-xl pl-4 sm:pl-0">
             <Swiper
-              modules={[Pagination, Scrollbar, A11y]}
+              modules={[Pagination, A11y]}
               spaceBetween={50}
               slidesPerView={1}
               breakpoints={{
                 600: {
-                  slidesPerView: 2, // Show 3 slides when screen width is 640px or more
+                  slidesPerView: 2,
                 },
                 1000: {
-                  slidesPerView: 3, // Show 3 slides when screen width is 640px or more
+                  slidesPerView: 3,
                 },
               }}
               pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
             >
               {sections[3].posts.map((post, index) => (
                 <SwiperSlide key={index}>

@@ -13,9 +13,9 @@ export const SectionsProvider = ({ children }) => {
       const sortedSections = response.data.data
         .map((section) => ({
           ...section,
-          posts: section.posts.sort((a, b) => a.id - b.id), // Sort posts based on their IDs
+          posts: section.posts.sort((a, b) => a.id - b.id),
         }))
-        .sort((a, b) => a.id - b.id); // Sort sections based on their IDs
+        .sort((a, b) => a.id - b.id);
       setSections(sortedSections);
       setIsLoading(true);
     } catch (error) {
