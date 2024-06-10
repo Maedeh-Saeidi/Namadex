@@ -18,6 +18,7 @@ export default function Services() {
       id: post.id,
     });
   };
+  isLoading && console.log(sections);
   return (
     isLoading && (
       <div

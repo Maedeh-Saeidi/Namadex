@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import border from "../images/border.jpg";
 import one from "../images/1.png";
 import two from "../images/2.png";
@@ -12,9 +12,16 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import axios from "axios";
+import ProcessModal from "../components/ProcessModal";
 
 export default function Process() {
   const [slidesPerView, setSlidesPerView] = useState(1);
+  const [data, setData] = useState({
+    title: "",
+    desc: "",
+  });
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,7 +35,21 @@ export default function Process() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
+  const fetchPost = async (postId) => {
+    try {
+      const response = await axios.get(
+        `https://api.namadex.ir/api/v1/section/post/${postId}`
+      );
+      setData({
+        title: response.data.data.title,
+        desc: response.data.data.description,
+      });
+      console.log("data:", data.title, data.desc);
+      setOpenModal(true);
+    } catch (error) {
+      console.error("Getting post details failed", error);
+    }
+  };
   return (
     <div className="h-max-screen bg-[url(../src/images/bg-process.jpg)] bg-no-repeat bg-center flex flex-col">
       <div className="h-[6rem]">
@@ -50,17 +71,30 @@ export default function Process() {
             dir="rtl"
             className="flex flex-col items-center gap-3 text-[15px] sm:flex-row sm:justify-center sm:gap-[2rem] 2xl:gap-[10rem] sm:text-[20px] pt-5"
           >
-            <div className="flex flex-row gap-2">
+            <div
+              onClick={() => {
+                fetchPost(252);
+              }}
+              className="flex flex-row gap-2 cursor-pointer"
+            >
               <img className="" src={one} alt="One" width={40} />
-              <h1 className="flex-1 pt-3">
-                بررسی و تحلیل اقتصادی دارایی ها
-              </h1>{" "}
+              <h1 className="flex-1 pt-3">بررسی و تحلیل اقتصادی دارایی ها</h1>
             </div>
-            <div className="flex flex-row gap-2 pl-2">
+            <div
+              onClick={() => {
+                fetchPost(253);
+              }}
+              className="flex flex-row gap-2 pl-2 cursor-pointer"
+            >
               <img className="" src={two} alt="Two" width={40} />
               <h1 className="flex-1 pt-3">بررسی و تحلیل حقوقی دارایی ها</h1>
             </div>
-            <div className="flex flex-row gap-2">
+            <div
+              onClick={() => {
+                fetchPost(254);
+              }}
+              className="flex flex-row gap-2"
+            >
               <img className="" src={three} alt="Three" width={40} />
               <h1 className="flex-1 pt-3">بررسی و تحلیل تخصصی دارایی ها</h1>
             </div>
@@ -91,7 +125,12 @@ export default function Process() {
             effect={"fade"}
           >
             <SwiperSlide className="p-10">
-              <div className="flex flex-col items-center gap-10">
+              <div
+                onClick={() => {
+                  fetchPost(255);
+                }}
+                className="flex flex-col items-center gap-10"
+              >
                 <h1 className="w-[12rem] text-center">
                   ورود به مرحله توکن سازی دارایی ها بعد از گذر از فرآیند آماده
                   سازی{" "}
@@ -115,14 +154,24 @@ export default function Process() {
               </div>
             </SwiperSlide>
             <SwiperSlide className="p-10">
-              <div className="flex flex-col items-center gap-10">
+              <div
+                onClick={() => {
+                  fetchPost(256);
+                }}
+                className="flex flex-col items-center gap-10"
+              >
                 <img src={imageOne} alt="First Image" width={200} />
                 <h1 className="w-[15rem] text-center">
                   عرضه توکن طبق بلاکچین شخصی سازی شده نمادکس توسط بنیاد سور
                 </h1>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-10">
+            <SwiperSlide
+              onClick={() => {
+                fetchPost(257);
+              }}
+              className="p-10"
+            >
               <div className="flex flex-col items-center gap-10">
                 <h1 className="w-[13rem] text-center">
                   روند مراقبت از توکنها بصورت دائمی در سرورها و همچنین ارائه
@@ -134,6 +183,11 @@ export default function Process() {
           </Swiper>
         </div>
       </div>
+      <ProcessModal
+        data={data}
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+      />
     </div>
   );
 }
