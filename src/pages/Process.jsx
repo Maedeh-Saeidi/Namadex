@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import axios from "axios";
 import ProcessModal from "../components/ProcessModal";
+import { motion } from "framer-motion";
 
 export default function Process() {
   const [slidesPerView, setSlidesPerView] = useState(1);
@@ -71,7 +72,11 @@ export default function Process() {
             dir="rtl"
             className="flex flex-col items-center gap-3 text-[15px] sm:flex-row sm:justify-center sm:gap-[2rem] 2xl:gap-[10rem] sm:text-[20px] pt-5"
           >
-            <div
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 5px rgb(255,255,255)",
+              }}
               onClick={() => {
                 fetchPost(252);
               }}
@@ -79,8 +84,12 @@ export default function Process() {
             >
               <img className="" src={one} alt="One" width={40} />
               <h1 className="flex-1 pt-3">بررسی و تحلیل اقتصادی دارایی ها</h1>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 5px rgb(255,255,255)",
+              }}
               onClick={() => {
                 fetchPost(253);
               }}
@@ -88,16 +97,20 @@ export default function Process() {
             >
               <img className="" src={two} alt="Two" width={40} />
               <h1 className="flex-1 pt-3">بررسی و تحلیل حقوقی دارایی ها</h1>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 5px rgb(255,255,255)",
+              }}
               onClick={() => {
                 fetchPost(254);
               }}
-              className="flex flex-row gap-2"
+              className="flex flex-row gap-2 cursor-pointer"
             >
               <img className="" src={three} alt="Three" width={40} />
               <h1 className="flex-1 pt-3">بررسی و تحلیل تخصصی دارایی ها</h1>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -125,11 +138,15 @@ export default function Process() {
             effect={"fade"}
           >
             <SwiperSlide className="p-10">
-              <div
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 5px rgb(255,255,255)",
+                }}
                 onClick={() => {
                   fetchPost(255);
                 }}
-                className="flex flex-col items-center gap-10"
+                className="flex flex-col items-center gap-10 cursor-pointer"
               >
                 <h1 className="w-[12rem] text-center">
                   ورود به مرحله توکن سازی دارایی ها بعد از گذر از فرآیند آماده
@@ -151,34 +168,42 @@ export default function Process() {
                   alt="First Image"
                   width={200}
                 />
-              </div>
+              </motion.div>
             </SwiperSlide>
             <SwiperSlide className="p-10">
-              <div
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 5px rgb(255,255,255)",
+                }}
                 onClick={() => {
                   fetchPost(256);
                 }}
-                className="flex flex-col items-center gap-10"
+                className="flex flex-col items-center gap-10 cursor-pointer"
               >
                 <img src={imageOne} alt="First Image" width={200} />
                 <h1 className="w-[15rem] text-center">
                   عرضه توکن طبق بلاکچین شخصی سازی شده نمادکس توسط بنیاد سور
                 </h1>
-              </div>
+              </motion.div>
             </SwiperSlide>
-            <SwiperSlide
-              onClick={() => {
-                fetchPost(257);
-              }}
-              className="p-10"
-            >
-              <div className="flex flex-col items-center gap-10">
+            <SwiperSlide className="p-10">
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 5px rgb(255,255,255)",
+                }}
+                onClick={() => {
+                  fetchPost(257);
+                }}
+                className="flex flex-col items-center gap-10 cursor-pointer"
+              >
                 <h1 className="w-[13rem] text-center">
                   روند مراقبت از توکنها بصورت دائمی در سرورها و همچنین ارائه
                   گزارشهای شفاف کاری
                 </h1>
                 <img src={imageThree} alt="First Image" width={200} />
-              </div>
+              </motion.div>
             </SwiperSlide>
           </Swiper>
         </div>
