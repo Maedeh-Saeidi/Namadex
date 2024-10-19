@@ -3,6 +3,9 @@ import theMan from "../images/Man.png";
 import { motion } from "framer-motion";
 
 export default function HomePage() {
+  const handleClick = () => {
+    window.location.href = "https://app.namadex.ir/";
+  };
   return (
     <div className="sm:bg-[url(../src/images/HomePageBI.jpg)] bg-no-repeat bg-cover bg-left h-screen">
       <Header></Header>
@@ -31,6 +34,7 @@ export default function HomePage() {
             </h3>
           </div>
           <motion.button
+            onClick={handleClick}
             whileHover={{
               scale: 1.1,
               boxShadow: "0px 0px 8px rgb(255,255,255)",
