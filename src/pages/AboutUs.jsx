@@ -15,7 +15,10 @@ export default function AboutUs() {
             <h1 className="font-bold text-[27px] text-[#4D4D4D] mr-4  sm:text-[40px]">
               {sections[0].title}
             </h1>
-            <p className="text-[15px] text-[#4D4D4D] max-w-[90%] text-right mr-4 sm:text-[22px]">
+            <p
+              dir="rtl"
+              className="text-[15px] text-[#4D4D4D] max-w-[90%] text-right mr-4 sm:text-[22px]"
+            >
               {sections[0].description}
             </p>
           </div>
