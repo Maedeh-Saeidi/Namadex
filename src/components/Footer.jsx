@@ -15,13 +15,13 @@ export default function Footer() {
               textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
             target="_blank"
-            href="https://trustseal.enamad.ir/?id=505639&Code=szzIQkre9wvQVg03GbpZe4o3hXIzV7Fs"
+            href="https://trustseal.enamad.ir/?id=540054&Code=EBJhrfp7yX3VdCeRjqrHV01q1CifgF4i"
           >
             <img
-              src="https://trustseal.enamad.ir/logo.aspx?id=505639&Code=szzIQkre9wvQVg03GbpZe4o3hXIzV7Fs"
+              src="https://trustseal.enamad.ir/logo.aspx?id=540054&Code=EBJhrfp7yX3VdCeRjqrHV01q1CifgF4i"
               alt="Enamad"
               referrerpolicy="origin"
-              code="szzIQkre9wvQVg03GbpZe4o3hXIzV7Fs"
+              code="EBJhrfp7yX3VdCeRjqrHV01q1CifgF4i"
             />
           </motion.a>
           <motion.a
