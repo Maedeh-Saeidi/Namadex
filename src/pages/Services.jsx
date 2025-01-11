@@ -19,6 +19,9 @@ export default function Services() {
     });
   };
   isLoading && console.log(sections);
+  const handlePostClick = (postLink) => {
+    window.open(postLink, "_blank");
+  };
   return (
     isLoading && (
       <div
@@ -43,7 +46,7 @@ export default function Services() {
                   scale: 1.1,
                   textShadow: "0px 0px 5px rgb(255,255,255)",
                 }}
-                onClick={() => openModal(post.id)}
+                onClick={() => handlePostClick(post.link)}
                 key={index}
                 className={`w-[20rem] hover:cursor-pointer h-[13rem] gap-3 flex flex-col items-center justify-center text-center sm:gap-3 md:gap-5 bg-white shadow-xl rounded-xl sm:w-[20rem] sm:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] relative
                 `}

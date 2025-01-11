@@ -16,16 +16,16 @@ function App() {
   return (
     <div className="font-IRANSans">
       <SectionsProvider>
-        <HomePage></HomePage>
-        <AboutUs></AboutUs>
-        <Services></Services>
-        <Slogan></Slogan>
-        <Companies></Companies>
-        <Process></Process>
-        <Projects></Projects>
-        <ContactUs></ContactUs>
-        <NewsPage></NewsPage>
-        <Footer></Footer>
+        <HomePage />
+        <AboutUs />
+        <Services />
+        <Slogan />
+        <Companies />
+        <Process />
+        <Projects />
+        <ContactUs />
+        <NewsPage />
+        <Footer />
       </SectionsProvider>
     </div>
   );
