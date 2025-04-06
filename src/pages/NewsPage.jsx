@@ -18,7 +18,7 @@ export default function NewsPage() {
           <div className="flex-1">
             <img src={border} alt="" className="" />
           </div>
-          <h1 className="font-bold text-[25px] text-left flex-1 pr-[5rem]  sm:pr-[15rem] sm:text-[50px]">
+          <h1 className="font-bold text-[25px] text-left flex-1 pr-[5rem]  sm:pr-[15rem] sm:text-[40px]">
             {sections[3].title}
           </h1>
         </div>
@@ -63,7 +63,7 @@ export default function NewsPage() {
                           dangerouslySetInnerHTML={{ __html: post.title }}
                         ></p>
                         <p
-                          className="font-bold w-[85%] text-[15px] 2xl:text-[17px] text-[#4D4D4D] pr-4"
+                          className="font-bold w-[85%] text-[12px] 2xl:text-[14px] text-[#4D4D4D] pr-4"
                           dangerouslySetInnerHTML={{ __html: post.description }}
                         ></p>
                         <motion.a

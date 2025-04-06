@@ -54,7 +54,7 @@ export default function Process() {
   return (
     <div className="h-max-screen bg-[url(../src/images/bg-process.jpg)] bg-no-repeat bg-center flex flex-col">
       <div className="h-[6rem]">
-        <h1 className="font-bold text-[28px] text-center pt-10 sm:pt-10 sm:text-[45px]">
+        <h1 className="font-bold text-[28px] text-center pt-10 sm:pt-10 sm:text-[37px]">
           فرآیند کاری نمادکس
         </h1>
       </div>
@@ -64,7 +64,7 @@ export default function Process() {
             <div className="flex-1">
               <img src={border} />
             </div>
-            <h1 className="flex-1 font-bold text-[20px] text-[#3DA88C] text-left pr-[4rem] sm:pr-[15rem] sm:text-[30px] 2xl:text-[45px]">
+            <h1 className="flex-1 font-bold text-[20px] text-[#3DA88C] text-left pr-[4rem] sm:pr-[15rem] sm:text-[33px] 2xl:text-[45px]">
               فرآیند آماده سازی
             </h1>
           </div>
@@ -119,7 +119,7 @@ export default function Process() {
           <div className="flex-1">
             <img src={border} alt="" className="" />
           </div>
-          <h1 className="flex-1 font-bold text-[23px] text-[#3DA88C] text-right sm:text-[40px]">
+          <h1 className="flex-1 font-bold text-[23px] text-[#3DA88C] text-right sm:text-[35px]">
             فرآیند نشر
           </h1>
         </div>

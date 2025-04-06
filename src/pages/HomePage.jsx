@@ -23,13 +23,13 @@ export default function HomePage() {
             >
               نمادِکس
             </motion.h1>
-            <h2 className="text-[20px] text-[#4D4D4D] sm:text-[33px]">
+            <h2 className="text-[20px] text-[#4D4D4D] sm:text-[30px]">
               با ما به دنیای جدید کسب و کار بپیوندید
             </h2>
-            <h3 className="w-[18rem] text-[18px] text-[#6A7875] sm:text-[20px] sm:w-auto">
+            <h3 className="w-[18rem] text-[18px] text-[#6A7875] sm:text-[17px] sm:w-auto">
               قابلیت عرضه املاک، دارایی های کشاورزی و دیگر دارایی های شما
             </h3>
-            <h3 className="text-[18px] text-[#6A7875] sm:text-[20px]">
+            <h3 className="text-[18px] text-[#6A7875] sm:text-[17px]">
               در شرکت ما
             </h3>
           </div>

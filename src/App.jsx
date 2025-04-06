@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Slogan from "./components/Slogan";
-import Companies from "./pages/Companies";
+// import Companies from "./pages/Companies";
 import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import NewsPage from "./pages/NewsPage";
@@ -20,7 +20,7 @@ function App() {
         <AboutUs />
         <Services />
         <Slogan />
-        <Companies />
+        {/* <Companies /> */}
         <Process />
         <Projects />
         <ContactUs />

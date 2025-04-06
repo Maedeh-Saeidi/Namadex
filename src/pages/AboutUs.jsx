@@ -12,17 +12,17 @@ export default function AboutUs() {
       {isLoading && (
         <div className="flex-1 flex flex-col gap-10 justify-center items-start">
           <div className="flex flex-col gap-10 items-end">
-            <h1 className="font-bold text-[27px] text-[#4D4D4D] mr-4  sm:text-[40px]">
+            <h1 className="font-bold text-[27px] text-[#4D4D4D] mr-4  sm:text-[35px]">
               {sections[0].title}
             </h1>
             <p
               dir="rtl"
-              className="text-[15px] text-[#4D4D4D] max-w-[90%] text-right mr-4 sm:text-[22px]"
+              className="text-[15px] text-[#4D4D4D] max-w-[90%] text-right mr-4 sm:text-[14px]"
             >
               {sections[0].description}
             </p>
           </div>
-          <motion.a
+          {/* <motion.a
             whileHover={{
               scale: 1.1,
               textShadow: "0px 0px 8px rgb(255,255,255)",
@@ -32,7 +32,7 @@ export default function AboutUs() {
             className="text-[13px] text-[#3FAC8D] sm:text-[18px] ml-10"
           >
             ادامه ی مطلب
-          </motion.a>
+          </motion.a> */}
         </div>
       )}
       <div className="flex-1 relative flex flex-col justify-center">

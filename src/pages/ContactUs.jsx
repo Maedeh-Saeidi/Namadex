@@ -21,7 +21,7 @@ export default function ContactUs() {
           />
         </div>
         <div className="flex-1 flex flex-col justify-center sm:pb-[5rem] gap-[2.5rem] text-right">
-          <h1 className="text-[30px] text-[#FFFFFF] pr-[2rem] sm:pr-[5rem] sm:text-[40px]">
+          <h1 className="text-[30px] text-[#FFFFFF] pr-[2rem] sm:pr-[5rem] sm:text-[35px]">
             با ما در ارتباط باشید
           </h1>
           <ContactUsForm isLoading={isLoading} setIsLoading={setIsLoading} />

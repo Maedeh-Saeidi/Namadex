@@ -34,7 +34,7 @@ export default function Services() {
       >
         <div className="pt-10 sm:pt-3 flex flex-col gap-1 items-center justify-center sm:mt-0 mb-5">
           <h1
-            className="w-[100%] text-center text-[20px] text-[#4D4D4D] font-bold sm:text-[28px] sm:w-[100%] sm:pt-10"
+            className="w-[100%] text-center text-[20px] text-[#4D4D4D] font-bold sm:text-[27px] sm:w-[100%] sm:pt-10"
             dangerouslySetInnerHTML={{ __html: sections[1].title }}
           ></h1>
         </div>
